@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Quer sair comigo?</title>
+<title>Você aceita sair você comigo? :P </title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
 body {
-background-color: #92AA83;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 text-align: center;
 padding-top: 50px;
 }
 .titulo {
   font-family: 'Montserrat Alternates', sans-serif; 
   color: #ffffff;
+  font-size: 36px;
 }
 button {
-background-color: #8CD867;
+background-color: #f7d0a9;
 color: #FBFFF1;
-font-size: 24px;
+font-family: 'Montserrat Alternates', sans-serif;
+font-size: 28px;
 font-weight: bold;
 padding: 20px 40px;
 border: none;
 border-radius: 50px;
 cursor: pointer;
 margin: 20px;
+}
+
+.foto {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.borda {
+    border-style: double;
+    border-color: #ff9999;
+    box-shadow: 3px 8px #ff9999;
 }
 
 button:hover {
@@ -33,9 +49,12 @@ color: #ffffff;
 </head>
 <body>
 <h1 class="titulo">Quer sair comigo?</h1>
+<div class="foto">
+<img class="borda" src="emojis.png" alt="emoji">
+</div>
 <button id="sim">Sim</button>
 <button id="nao">Não</button>
-
+<h2> 
 <script>
 var nao = document.getElementById("nao");
 nao.addEventListener("click", function() {
@@ -48,7 +67,7 @@ nao.style.left = randomX + "px";
 
 var sim = document.getElementById("sim");
 sim.addEventListener("click", function() {
-window.location.href = "https://www.youtube.com/watch?v=BBSqiqqt_7E";
+window.location.href = "https://youtu.be/9LmiJevskhI";
 });
 </script>
 </body>
